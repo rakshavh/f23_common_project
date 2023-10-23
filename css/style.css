@@ -1,0 +1,271 @@
+
+  /**Link to google doc:https://rakshavh.github.io/f23_common_project/index.html**/
+  body {
+    background-color: #f5e8e8;
+    margin: 0; 
+  }
+
+  .skip{
+    position: absolute;
+    transform: translateY(-100%);
+  }
+
+  .skip {
+    background: #efedfb;
+    height: 30px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+  }
+
+  .skip:focus{
+    transform: translateY(0%);
+  }
+
+  .topnav {
+    background-color:  #464067;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  
+  nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  nav a:visited{
+    color: white;
+  }
+
+  nav a.current{
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+  
+  .topnav a:hover {
+    background-color:  #7f78ab;
+  }
+
+  .navlist{
+    list-style-type: none
+  }
+
+  ul{
+    padding-left: 0px;
+  }
+
+  .inglist{
+    padding-left: 0.75rem;
+    list-style-type: decimal;
+    margin-left: 8px;
+  }
+
+  a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+
+  h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding: 0.5rem;
+    color: rgb(25, 25, 25);
+    /**text-transform: uppercase;**/
+    font-size: 1.75rem;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0px;
+  }
+  
+  h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding: 0.5rem;
+    color: #2c2c2c;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    color: rgb(100, 38, 65);
+   /**text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 0.5px**/
+  }
+
+  h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.17rem;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+li, p, figcaption, span{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    max-width: 900px;
+  }
+
+li{
+    margin: 0 auto;
+    list-style-type: initial;
+}
+
+p {
+    padding: 8px;
+  }
+
+.list{
+    text-align: left;
+    margin-left: 8px;
+}
+
+.likelist{
+    padding-left: 20px;
+}
+
+/**Used grid rows for all pages. Used another grid for photo gallery in index.html and recipes.html**/
+.container {
+    display:grid;
+    /**grid-template-columns: repeat(2, 1fr);**/
+    grid-template-rows: repeat(5, auto);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 1.5rem;
+    justify-content: space-between;
+    margin: 8px
+
+}
+
+.container2 {
+    display:grid;
+    /**grid-template-columns: repeat(2, 1fr);**/
+    grid-template-rows: repeat(6, auto);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 1.5rem;
+    justify-content: space-between;
+    margin: 8px
+
+}
+
+.container3 {
+    display:grid;
+    /**grid-template-columns: repeat(2, 1fr);**/
+    grid-template-rows: repeat(3, auto);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 1.5rem;
+    justify-content: space-between;
+    margin: 8px
+
+}
+
+.BoxA{
+    grid-row: 1;
+}
+
+.BoxB{
+    grid-row: 2;
+}
+
+.BoxC{
+    grid-row: 3;
+}
+
+.BoxD{
+    grid-row: 4;
+}
+
+.BoxE{
+    grid-row: 5;
+}
+
+.BoxF{
+    grid-row: 6;
+}
+
+.bigimg{
+    border-radius: 10px;
+    object-fit: cover;
+    justify-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -6px 5px 8px #c69292;
+}
+
+/**Used different classes to add changes to bigger screen sizes in the future**/
+.imgA, .imgB, .imgC, .imgD, .imgE{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5%;
+    grid-row-gap: 2.5%;
+    margin: 5px;
+    /**grid-column: 1 / span 2;
+    grid-row: 2;**/
+}
+
+.smallimgA1, .smallimgB1, .smallimgC1, .smallimgD1, .smallimgE1 {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
+}
+
+.smallimgA2, .smallimgB2, .smallimgC2, .smallimgD2, .smallimgE2 {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
+}
+
+.smallimgA3, .smallimgB3, .smallimgC3, .smallimgD3, .smallimgE3 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
+}
+
+footer {
+    background-color: #464067;
+    padding: 1.5rem;
+}
+
+.thanks{
+    color: aliceblue;
+    font-weight: 500;
+    font-style: italic;
+    padding: 0;
+}
+
+.recipeimg{
+    margin-top: 22px;
+}
+
+.info{
+    font-weight: 500;
+    color: rgb(100, 38, 65);
+}
+
+.recipelist{
+    padding-left: 0.75rem;
+    list-style-type: circle;
+    margin-left: 8px;
+
+  }
